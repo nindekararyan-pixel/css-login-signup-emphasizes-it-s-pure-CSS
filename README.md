@@ -24,7 +24,7 @@ Features glassmorphism design, a colorful animated background, tab switching bet
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/your-username/css-login-signup.git
+   git clone https://github.com/nindekararyan-pixel/css-login-signup.git
    ```
 2. Open `login-signup-css-only.html` in your browser — that's it, no build step or dependencies required.
 
