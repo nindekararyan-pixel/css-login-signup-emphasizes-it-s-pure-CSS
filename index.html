@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Singup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+    <div class="particle" style="width: 4px;height: 4px;left: 10%;animation-duration: 14s;animation-delay: 0s;"></div>
+    <div class="particle" style="width: 3px;height: 3px;left: 25%;animation-duration: 18s;animation-delay: 2s;"></div>
+    <div class="particle" style="width: 5px;height: 5px;left: 45%;animation-duration: 16s;animation-delay: 4s;"></div>
+    <div class="particle" style="width: 3px;height: 3px;left: 65%;animation-duration: 20s;animation-delay: 1s;"></div>
+    <div class="particle" style="width: 4px;height: 4px;left: 80%;animation-duration: 15s;animation-delay: 3s;"></div>
+    <div class="particle" style="width: 3px;height: 3px;left: 92%;animation-duration: 19s;animation-delay: 5s;"></div>
+
+
+    <div class="wrapper">
+        <input type="radio" name="tabs" id="tab-login" checked>
+        <input type="radio" name="tabs" id="tab-signup">
+
+
+        <div class="card">
+            <div class="tabs">
+                <div class="tab-slider"></div>
+                <label class="tab-lable" for="tab-login">Log In</label>
+                <label class="tab-lable" for="tab-signup">Sign Up</label>
+            </div>
+
+
+             <!-- LOGIN -->
+              <form class="form-panel" id="loginPanel">
+                <h2>Welcome back</h2>
+                <p class="subtitle">Log in to continue</p>
+
+
+                <div class="field">
+                    <label class="input-lable" for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="you@example.com" required>
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+
+
+                <div class="field">
+                    <label class="input-label" for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required minlength="6" pattern=".{6,}">
+                    <span class="error-msg">Mnimum 6 characters</span>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">Log In</button>
+              </form>
+
+
+              <!-- SIGNUP -->
+               <form class="form-panel" id="singupPanel">
+                <h2>Create account</h2>
+                <p class="subtitle">Sing up get started</p>
+
+
+                <div class="field">
+                    <label class="input-label" for="signupName">Full name</label>
+                    <input type="text" id="signupName" name="signupName" placeholder="Aryan Sharma" required minlength="2" pattern="[A-Za-z]{2,}">
+                    <span class="error-msg">Enter your name (letters only)</span>
+                </div>
+
+
+                <div class="field">
+                    <label class="input-lable" for="sigupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="signupEmail" placeholder="you@exmple.com" required>
+
+                    <span class="error-msg">Enter  your vaild email address</span>
+                </div>
+
+
+                <div class="field">
+                    <label class="" class="input-label" for="singupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="sigupPassword" placeholder="At least 8 characters" required minlength="8" pattern=".{8,}">
+                    <span class="error-msg">Minimum 8 characters</span>
+                </div>
+
+
+                <div class="field">
+                    <label class="input-lable" for="signupConfirm">Confirm password</label>
+                    <input type="password" id="signupConfirm" name="signupConfirm" placeholder="Re-enter your password" required minlength="8" pattern=".{8,}">
+                    <span class="error-msg">Minimum 8 characters</span>
+                </div>
+
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+               </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
